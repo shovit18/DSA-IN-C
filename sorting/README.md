@@ -18,3 +18,24 @@ In each pass, find the minimum elements from the unsorted part and put it at the
 Like sorting playing cards in your hand. pick one card at a time and insert it in the correct position among already sorted cards.
 (good when nearly sorted)
 
+
+
+## Array Palindrome
+
+Checks whether an array reads the same forwards and backwards.
+
+### Algorithm
+1. Initialize two pointers:
+   - Left (`l = 0`)
+   - Right (`r = n - 1`)
+2. Compare `arr[l]` and `arr[r]`.
+3. If they are different, the array is not a palindrome.
+4. Otherwise, move `l++` and `r--`.
+5. Continue until `l >= r`.
+6. If all pairs match, the array is a palindrome.
+
+### Time Complexity
+- O(n)
+
+### Space Complexity
+- O(1)
